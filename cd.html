@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>ferrt</title>
+    </head>
+    <body>
+      <h1><u>FOREVER</u></h1>
+      <div>
+        <label>YOUR NUMBER</label>
+        <input type="text" id="number">
+       </div>&nbsp;
+       <div>
+        <button id="dre" onclick="verify()">verify</button>
+       </div>&nbsp;
+       <div>
+          <input type="button" id="answer">
+       </div>
+       <script>
+         function verify(){
+         const n=document.getElementById("number").value;
+             if(n<="0"){
+         document.getElementById("answer").value="Negative";
+                         }else{
+         document.getElementById("answer").value="Positive";
+                       }
+                       }
+       </script>
+    </body>
+</html>

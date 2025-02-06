@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add two numbers</title>
+    </head>
+        <div class="header">
+            <h1><u>FIND SUM</u></h1>
+        </div>
+        <div class="content">
+            <div class="form-control">
+                <label>Enter First Number</label>
+                <input type="text"id="Number1">
+            </div>
+            <div class="form-control">
+                <label>Enter Second Number</label>
+                <input type="text" id="Number2">
+            </div>
+            <div>
+                sum is 
+                <p id="sum"></p>
+            </div>
+            <div class="form-control" >
+                <button onclick="add()">ADD
+                </button>
+            </div>
+        </div>
+        <script>
+            function add(){
+                const n1=document.getElementById("Number1").value;
+                const n2=document.getElementById("Number2").value;
+                const sum=Number(n1)+Number(n2);
+                document.getElementById("sum").innerHTML=sum;
+                          }
+            </script>
+    </body>
+</html>

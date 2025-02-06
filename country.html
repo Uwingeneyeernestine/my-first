@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EAC Capital Cities</title>
+    </head>
+    <body>
+        <h1>Check EAC Capital Cities</h1>
+        <div class="form-control">
+            <label>select country</label>
+            <select id="country"required="required">
+                <option></option>
+                <option value="RWANDA">RWANDA</option>
+                <option value="BURUNDI">BURUNDI</option>
+                <option value="TANZANIA">TANZANIA</option>
+                <option value="UGANDA">UGANDA</option>
+                <option value="KENYA">KENYA</option>
+                <option value="SOUTH SUDAN">SOUTH SUDAN</option>
+                <option value="DR CONGO">DR CONGO</option>
+            </select>
+        </div>
+         <div class="form-control">
+            <button id="btn" onclick="check()">check</button>
+         </div>
+         <script>
+            function check(){
+                const country=document.getElementById("country").value;
+                if(country=="RWANDA"){
+                    alert("Kigali");
+                }else if(country=="BURUNDI"){
+                    alert("Gitega");
+                }else if(country=="TANZANIA"){
+                    alert("Dodoma");
+                }else if(country=="UGANDA"){
+                    alert("Kampala");
+                }else if(country=="KENYA"){
+                    alert("Nairobi");
+                }else if(country=="SOUTH SUDAN"){
+                    alert("Djuba");
+                }else if(country=="DR CONGO"){
+                    alert("Kinshasa");
+                }else{
+                    alert("INVALID COUNTRY");
+                }        
+             }
+         </script>
+    </body>
+</html>

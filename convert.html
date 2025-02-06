@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>convert</title>
+    </head>
+        <div class="header">
+            <h1><u>CONVERTOR</u></h1>
+        </div>
+        <div class="content">
+            <div class="name">
+               <div>
+                <label>Enter First Number</label>
+                <input type="text"id="Number1">
+               </div>
+               <div>
+                <label>Enter Second Number</label>
+                <input type="text" id="Number2">
+               </div>
+            <div>
+                convert is 
+                <button id="convert"></button>
+            </div>
+                <button onclick="convert()">convert</button>
+            </div>
+        </div>
+        <script>
+            function convert(){
+                const n1=document.getElementById("Number1").value;
+                const n2=document.getElementById("Number2").value;
+                const convert=Number(n1)*Number(n2);
+                document.getElementById("convert").innerHTML=convert;
+                          }
+            </script>
+    </body>
+</html>

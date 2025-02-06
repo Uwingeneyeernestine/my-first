@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login system</title>
+    </head>
+    <body>
+        <h1>USER LOGIN</h1>
+        <div class="form">
+       <div class="form-control">
+        <label>Username</label>
+        <input type="text" id="Username">
+       </div>&nbsp;
+       <div class="form-control">
+        <label>password</label>
+        <input type="password" id="password">
+       </div>&nbsp;
+       <div class="form-control">
+        <button id="btn" onclick="Login()">Login</button>
+       </div>&nbsp;
+       <div>
+        <input type="button" id="sln">
+       </div>
+  <p id="you"></p>
+
+       <script>
+        function Login(){
+            const User=document.getElementById("Username").value;
+            const pass=document.getElementById("password").value;
+         const you=<a href="login.com" >login</a>
+            if((User=="admin")&&(pass=="admin")){
+                document.getElementById("btn").value=you;
+            }else{
+              document.getElementById("sln").value="fail";
+            } 
+        }
+       </script>
+        </div>
+    </body>
+</html>
